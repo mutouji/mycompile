@@ -1,8 +1,8 @@
 var fs = require('fs');
 const EthereumTx = require('ethereumjs-tx')
 const Web3 = require('web3');
-const lightwallet = require('eth-lightwallet');
-lightwallet.init(null,"wanglu")
+// const lightwallet = require('eth-lightwallet');
+// lightwallet.init(null,"wanglu")
 
 // const web3 = new Web3(new Web3.providers.HttpProvider("http://192.168.0.34:8545/"));      // local
 // const icoAddr = "0x4c7186ca231d14a530448722a25de03ec56fe12f";
@@ -23,12 +23,11 @@ lightwallet.init(null,"wanglu")
 const web3 = new Web3(new Web3.providers.HttpProvider("http://118.190.71.27:8444/"));   // kovan
 const icoAddr = "0x436a07de44d181bde657c7949fdd3f50d79afeab";
 const password = "wanglu";
-const from = "0xad854341e7989F5542189bB52265337E2993B7bc";
-const fromKey = "63ea807a3ff1d3d7439101612839d572e597767fe0970f468f924bfce46392a4";
+const from = "0xfe2b768a23948eddd7d7caea55baa31e39045382";
+const fromKey = "24ad2311e63272b160fa91171d240bf02863b3fc54467312fbf44e2dcbb6643e";
 const net = "kovan"
 const chainId = 42
 
-const decryptstr = fs.readFileSync("./keystore/UTC--2017-08-22T05-35-01Z--dfbd2947-8b2c-cc90-51df-5f7a2f23dbb8");
 // lightwallet.keystore.deriveKeyFromPassword(password, function(err, pwDerivedKey) {
 //   var accountObject = lightwallet._decryptString(decryptstr, pwDerivedKey);
 //   console.log(accountObject);
@@ -58,6 +57,7 @@ var tokenContract = token;
 console.log(net);
 console.log(icoAddr);
 console.log(tokenAddr);
+console.log(net);
 
 var Const = {
   // "gasPrice": "0x8A817C800",// 这个可修改

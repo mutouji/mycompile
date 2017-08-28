@@ -15,12 +15,21 @@ const Web3 = require('web3');
 // const fromKey = "63ea807a3ff1d3d7439101612839d572e597767fe0970f468f924bfce46392a4";
 // const net = "ropsten"
 
-const web3 = new Web3(new Web3.providers.HttpProvider("http://118.190.71.27:8444/"));   // kovan
-const icoAddr = "0x351746685ea22ef199da5b6d923e60ba767d0e59";
+// const web3 = new Web3(new Web3.providers.HttpProvider("http://118.190.71.27:8444/"));   // kovan
+// const icoAddr = "0x351746685ea22ef199da5b6d923e60ba767d0e59";
+// const password = "wanglu";
+// const from = "0xad854341e7989F5542189bB52265337E2993B7bc";
+// const fromKey = "63ea807a3ff1d3d7439101612839d572e597767fe0970f468f924bfce46392a4";
+// const net = "kovan"
+
+// 0x67453918d6d9ff3bf056075bfdf2832c831de8c1
+
+const web3 = new Web3(new Web3.providers.HttpProvider("http://118.190.71.27:8745/"));   // kovan
+const icoAddr = "0x67453918d6d9ff3bf056075bfdf2832c831de8c1";
 const password = "wanglu";
 const from = "0xad854341e7989F5542189bB52265337E2993B7bc";
 const fromKey = "63ea807a3ff1d3d7439101612839d572e597767fe0970f468f924bfce46392a4";
-const net = "kovan"
+const net = "mainnet"
 
 // const web3 = new Web3(new Web3.providers.HttpProvider("http://118.190.71.27:8545/"));      // rinkeby
 // const icoAddr = "0x4c7186ca231d14a530448722a25de03ec56fe12f";
@@ -38,6 +47,7 @@ var token = browser_testcoin_delphytokenContract.at(tokenAddr)
 console.log(net);
 console.log(icoAddr);
 console.log(tokenAddr);
+console.log(net);
 
 try {
   // web3.personal.newAccount("wanglu");
